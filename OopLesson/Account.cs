@@ -56,5 +56,18 @@ namespace OopLesson
                 return false;
             }
         }
+
+        public bool TransferFrom(int sum, Account donator)
+        {
+            if (donator.WithdrawFromAccount(sum))
+            {
+                DepositIntoAccount(sum);
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
