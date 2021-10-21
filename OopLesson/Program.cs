@@ -11,7 +11,7 @@ namespace OopLesson
         }
         static void Main(string[] args)
         {
-            
+
         }
 
     }
