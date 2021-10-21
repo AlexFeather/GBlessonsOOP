@@ -1,9 +1,8 @@
-﻿using System;
-
-namespace OopLesson
+﻿namespace OopLesson
 {
     public class Program
     {
+
         public enum AccountType
         {
             Debit = 0,
