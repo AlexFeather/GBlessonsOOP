@@ -69,5 +69,52 @@ namespace OopLesson
                 return false;
             }
         }
+
+        public bool Equals(Account obj)
+        {
+            if (Type == obj.Type && Total == obj.Total && Id == obj.Id)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator ==(Account acc1, Account acc2)
+        {
+            if (acc1.Type == acc2.Type && acc1.Total == acc2.Total && acc1.Id == acc2.Id)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public static bool operator !=(Account acc1, Account acc2)
+        {
+            if (acc1.Type != acc2.Type || acc1.Total != acc2.Total || acc1.Id != acc2.Id)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        //Так как Id у нас уникальны, я решал, что они отлично подойдут для хэш-кода
+        public override int GetHashCode()
+        {
+            return Id;
+        }
+
+        public override string ToString()
+        {
+            return $"Id #{Id}: {Type} type account, {Total} total.";
+        }
     }
 }
