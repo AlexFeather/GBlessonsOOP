@@ -9,5 +9,6 @@ namespace OopLesson.lesson6
         public string Name { get; protected set; }
         public string Descriprion { get; protected set; }
         public List<AtributeBonus> BonusList { get; protected set; }
+        public WorldBuilder.Race Race { get; protected set; }
     }
 }

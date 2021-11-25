@@ -9,7 +9,7 @@ namespace OopLesson.lesson6
     {
         public int Value { get; private set; }
         public AtributeBonusType Type { get; private set; }
-        public AtributeType Atribute {get; private set;}
+        public AtributeType Atribute { get; private set; }
 
         public AtributeBonus(int value, AtributeBonusType type, AtributeType atribute)
         {
@@ -17,4 +17,5 @@ namespace OopLesson.lesson6
             Type = type;
             Atribute = atribute;
         }
+    }
 }
